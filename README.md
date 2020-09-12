@@ -22,3 +22,5 @@ Currently, there's a bunch of known limitations:
   - no standalone (not UART-based) UI for distance control exists, because we're running out of IO pins (hardware I2C is an option, but I don't have the hardware on hand yet)
 
 This was a fun project aimed to push low-end-ish AVR8 to its limits and learn AVR (inline-) assembler, but the more it approaches "a high-speed AccelSteper alternative with some compromises", the more tedious the development of it as a library gets. So, I think the right way to go is to just switch to STM32 for the sake of development time.
+
+P.S. Compilation requires at least GCC 5.x.x with -std=gnu99 (for C) and -std=gnu++11 (for C++).
